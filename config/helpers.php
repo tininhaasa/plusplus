@@ -8,7 +8,7 @@
 *
 **/
 
-define('LOCAL_URL', '/emprezaz/FenixControle/');
+define('LOCAL_URL', '/plusplus/');
 
 return array(
 	'URLHelper' => new URLHelper(),
