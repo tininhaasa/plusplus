@@ -8,7 +8,7 @@
 *
 **/
 
-define('LOCAL_URL', '/');
+define('LOCAL_URL', '/api/');
 
 return array(
 	'URLHelper' => new URLHelper(),
