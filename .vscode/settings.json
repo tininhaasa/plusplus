@@ -1,0 +1,10 @@
+{
+    "diffEditor.wordWrap": "on",
+    "powermode.enabled": true,
+    "powermode.presets": "flames",
+    "powermode.enableExplosions": false,
+    "powermode.explosionDuration": 500,
+    "powermode.shakeIntensity": 1,
+    "powermode.shake.intensity": 1,
+    "powermode.explosions.duration": 500
+}

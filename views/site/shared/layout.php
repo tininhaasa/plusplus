@@ -30,9 +30,10 @@
 	<footer>Footer</footer>
 
 	<script type="text/javascript">
-		var URL = "<?php echo $url; ?>";
+		var PATH = "<?php echo $url; ?>";
 		var Helpers = {};
 	</script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 	<!-- Scripts -->
 	<?php $this->helpers['URLHelper']->getScripts(); ?>

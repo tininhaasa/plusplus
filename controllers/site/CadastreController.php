@@ -7,25 +7,25 @@
 * @author Emprezaz.com
 *
 **/
-class HomeController extends Controller
+class CadastreController extends Controller
 {
 
 	//home header
-	public function homeHeader()
+	public function index()
 	{		
 
 		$this->setLayout(
 			'site/shared/layout.php',
-			'PlusPlus - somando à você',
+			'Página home',
 			array(
 				'assets/css/style.css'
 			),
 			array(
 				'assets/libs/jquery/jquery.min.js',
-				'assets/js/site/home.js'
+				'assets/js/site/actividies/main.js'
 			)
 		);
-		$this->view('site/home/main.php');
+		$this->view('site/cadastre/index.php');
 
 	}
 

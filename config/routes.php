@@ -11,11 +11,16 @@
 // rotas normais
 $commonRoutes = array(
 	'/'               => 'HomeController/homeHeader',
-	'home/main'       => 'HomeController/homeMain',
+	'atividades'       => 'ActivitiesController/index',
 );
 
 // rotas POST
-$commonPost = array();
+$commonPost = array(
+
+	'cadastreUser' 	=> 'CadastreController/cadastreUser',
+	'loginUser' 	=> 'LoginController/loginUser',
+
+);
 
 $commonRoutes = array_merge($commonRoutes, $commonPost);
 
