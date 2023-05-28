@@ -13,7 +13,6 @@ class CadastreController extends Controller
 	//home header
 	public function index()
 	{		
-
 		$this->setLayout(
 			'site/shared/layout.php',
 			'Página home',
@@ -26,8 +25,5 @@ class CadastreController extends Controller
 			)
 		);
 		$this->view('site/cadastre/index.php');
-
 	}
-
-
 }

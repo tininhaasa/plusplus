@@ -4,4 +4,12 @@
 
 body {
 	margin: 0;
+	box-sizing: border-box;
+	background-color: #1E1E1E;
+}
+
+.container{
+	background-color: #5cacee80;
+	color: #FFFFFF;
+	text-decoration: none;
 }
