@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'hello_world';
+    src: url(../libs/fonts/hello-world.ttf);
+}
+
+*{
+    font-family: 'hello_world'!important;
+}

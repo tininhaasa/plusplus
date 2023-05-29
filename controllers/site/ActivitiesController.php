@@ -25,7 +25,7 @@ class ActivitiesController extends Controller
 				'assets/js/site/actividies/main.js'
 			)
 		);
-		$this->view('site\challenges\challenges.php');
+		$this->view('site/challenges/challenges.php');
 
 	}
 

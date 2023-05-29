@@ -13,7 +13,14 @@ class Error404 extends Controller
 	public function index()
 	{
 
-		$this->setLayout('site/home/index.php');
+		$this->setLayout('site/shared/layout.php',
+		'Página não encontrada',
+		array(
+			'assets/css/style.css'
+		),
+		array(
+			'assets/libs/jquery/jquery.min.js'
+		));
 		$this->view('error/error404.php');
 
 	}
