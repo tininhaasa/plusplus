@@ -3,7 +3,7 @@
     <div class="title mt-5 fs-3"><p>Introdução</p></div>
     <div class="percentage align-self-end fs-4"><p>0%</p></div>
 </a>
-<a href="<?= $url ?>/atividades/variavel" class="container col-3 m-5 p-2 rounded-4 d-flex align-items-center flex-column align-items-end">
+<a href="<?= $url ?>/atividades/variavel/1" class="container col-3 m-5 p-2 rounded-4 d-flex align-items-center flex-column align-items-end">
     <div class="title mt-5 fs-3"><p>Variáveis</p></div>
     <div class="percentage align-self-end fs-4"><p>0%</p></div>
 </a>
