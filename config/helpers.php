@@ -8,7 +8,7 @@
 *
 **/
 
-define('LOCAL_URL', '/plusplus/');
+define('LOCAL_URL', '/');
 
 return array(
 	'URLHelper' => new URLHelper(),
