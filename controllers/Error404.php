@@ -16,7 +16,8 @@ class Error404 extends Controller
 		$this->setLayout('site/shared/layout.php',
 		'Página não encontrada',
 		array(
-			'assets/css/style.css'
+			'assets/css/style.css',
+			'assets/css/error.css',
 		),
 		array(
 			'assets/libs/jquery/jquery.min.js'
