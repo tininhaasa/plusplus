@@ -11,8 +11,10 @@
 // rotas normais
 $commonRoutes = array(
 	'/'               => 'HomeController/homeHeader',
+	'cadastro'               => 'CadastreController/index',
 	'atividades'       => 'ActivitiesController/index',
 	'atividades/variavel'       => 'ActivitiesController/variables',
+	'atividades/intro'       => 'ActivitiesController/intro',
 );
 
 // rotas POST

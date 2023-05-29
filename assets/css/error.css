@@ -16,3 +16,10 @@ h2{
     justify-content: center;
     align-items: center;
 }
+
+@media(max-width:460px){
+    .center-div{
+        z-index: 10000;
+        margin-top: 40px;
+    }
+}

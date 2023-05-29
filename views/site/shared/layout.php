@@ -24,7 +24,18 @@
 
 <body>
 
-	<header>Header</header>
+    <header>
+        <div class="container-logoplusplus">
+            <img src="<?= $url ?>/assets/img/logo.png" alt="logoplusplus">
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="<?= $url ?>/login">Entrar</a></li>
+
+            </ul>
+        </div>
+    </header> 
 
 	<main>
 		<?php require $file; ?>

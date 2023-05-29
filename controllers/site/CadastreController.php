@@ -15,7 +15,7 @@ class CadastreController extends Controller
 	{		
 		$this->setLayout(
 			'site/shared/layout.php',
-			'Página home',
+			'Cadastre-se',
 			array(
 				'assets/css/style.css'
 			),

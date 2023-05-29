@@ -1,41 +1,132 @@
-* {
-	box-sizing: border-box;
+body{
+	background-color: whitesmoke;
+}
+.main-banner{
+    background-image: url('../img/fundohexagonos.png');
+    background-color: whitesmoke;
+    font-family: HW;
+    background-position: center;
+    text-align: center;
+    font-size: 60px;
+    padding: 65px 0;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 2px #000,-2px 2px 2px #000,2px -2px 2px #000,-2px -2px 2px #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
-body {
-	margin: 0;
-	box-sizing: border-box;
-	background-color: #1E1E1E;
-	color: #fff;
+*{
+    padding: 0;
+    margin: 0;
 }
 
-.challenges .container{
-	background-color: #5cacee80;
-	text-decoration: none;
-	color: #FFFFFF;
+
+
+#luciano{
+	width: 100%;
 }
 
-.content{
-	font-size: 20px;
-	text-align: justify;
+#gattino{
+	width: 100%;
 }
 
-li{
-	list-style: none;
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    
 }
 
-.btn-next{
-	width: 15%;
-	max-width: 200px;
-	background-color: #2878F0;
-	color: #000;
+.menu li{
+    display: inline-block;
+
 }
 
-.container-variables{
-	height: 100vh;
-	font-size: 30px;
+.menu li a {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
 }
 
-.title{
-	font-size: 5rem;
+header img{
+    margin-left: 20px;
+    height: 50px;
+}
+
+.sobreocurso{
+    background-color:whitesmoke;
+    color:#000;
+    text-shadow: none;
+    text-align:left;
+
+}
+
+.sobreaplusplus{
+    background-color: whitesmoke;
+    color: #000;    text-shadow: none;
+}
+
+.comofazemos{
+    background-color:whitesmoke;
+    color: #000;
+    text-shadow: none;
+    text-align: left;
+
+}
+
+footer{
+    background-color: black;
+    height: 9vh;
+    width: 100%;
+    display: flex;  
+}
+
+
+
+.primeira{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
+    
+}
+
+.segunda{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
+    
+}
+
+.terceira{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
+    
+}
+
+#textocurso{
+    text-align:justify;
+    
+}
+
+.textoplusplus{
+    text-align:center;
+    margin-right: 50px;
+}
+
+.textocomofazemos{
+    text-align:justify;
+    margin-right: 50px;
+}
+
+#LogoSI{
+	height: 150px;
 }
