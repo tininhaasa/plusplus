@@ -12,6 +12,7 @@
 $commonRoutes = array(
 	'/'               => 'HomeController/homeHeader',
 	'atividades'       => 'ActivitiesController/index',
+	'atividades/variavel'       => 'ActivitiesController/variables',
 );
 
 // rotas POST
