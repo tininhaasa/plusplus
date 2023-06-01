@@ -24,10 +24,20 @@ li{
 	list-style: none;
 }
 
-.btn-next{
+.btn-footer{
 	width: 15%;
 	max-width: 200px;
 	background-color: #2878F0;
+	color: #000;
+}
+
+.btn-footer:hover{
+	background-color: #2878F0;
+	color: #000;
+}
+
+.btn-correct{
+	background-color: #E4E4E4;
 	color: #000;
 }
 
@@ -38,4 +48,20 @@ li{
 
 .title{
 	font-size: 5rem;
+}
+
+.button-chellange{
+	background-color: transparent;
+	border: 1px solid #7E23BE;
+	color: #7E23BE;
+}
+
+.button-chellange:hover{
+	background-color: #7E23BE;
+	color: #FFFFFF;
+}
+
+.selected{
+	background-color: #2878F0;
+	color: #FFFFFF;
 }
