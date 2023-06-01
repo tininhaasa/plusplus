@@ -34,7 +34,7 @@
         </div>
         <div class="progress m-4" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0"
             aria-valuemax="100">
-            <div class="progress-bar" style="width: 25%"></div>
+            <div class="progress-bar" style="width: 50%"></div>
         </div>
     </div>
 </div>
