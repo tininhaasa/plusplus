@@ -65,3 +65,12 @@ li{
 	background-color: #2878F0;
 	color: #FFFFFF;
 }
+
+.variavel-input{
+	outline: 0;
+	border: 0;
+	width: 20%;
+	border-bottom: 1px solid #fff;
+	color: white;
+	background: transparent;
+}

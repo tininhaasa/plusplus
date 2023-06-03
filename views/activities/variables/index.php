@@ -28,8 +28,8 @@
     <div class="footer d-flex flex-column justify-content-end" style="height:100%;">
 
 <div class="buttons p-4 d-flex justify-content-around">
-    <button class="btn btn-lg btn-footer rounded-4">Voltar</button>
-    <button class="btn btn-lg btn-footer btn-next rounded-4">Proximo</button>
+    <a href="<?= $url ?>/atividades" class="btn btn-lg btn-footer rounded-4">Voltar</a>
+    <a href="<?= $url ?>/atividades/variavel/2" class="btn btn-lg btn-footer btn-next rounded-4">Proximo</a>
 </div>
 <div class="progress m-4" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0"
     aria-valuemax="100">
