@@ -14,6 +14,7 @@ $commonRoutes = array(
 	'cadastro'               => 'CadastreController/index',
 	'atividades'       => 'ActivitiesController/index',
 	'atividades/variavel'       => 'ActivitiesController/variables',
+	'atividades/selecao'       => 'ActivitiesController/ifs',
 	'atividades/intro'       => 'ActivitiesController/intro',
 );
 
