@@ -37,7 +37,7 @@
             <ul>
                 <li>
 					<?php 
-					if (!$this->helpers['UserSession']->has()) { ?>
+					if ($this->helpers['UserSession']->has()) { ?>
 						<a href="<?= $url ?>/atividades"><i class="fa-solid fa-circle-user"></i><?= $this->helpers['UserSession']->get('username') ?></a>
 
 					<?php }else{ ?>
