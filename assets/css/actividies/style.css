@@ -30,10 +30,20 @@ li{
 	list-style: none;
 }
 
-.btn-next{
+.btn-footer{
 	width: 15%;
 	max-width: 200px;
 	background-color: #2878F0;
+	color: #000;
+}
+
+.btn-footer:hover{
+	background-color: #2878F0;
+	color: #000;
+}
+
+.btn-correct{
+	background-color: #E4E4E4;
 	color: #000;
 }
 
@@ -43,6 +53,7 @@ li{
 }
 
 .title{
+<<<<<<< HEAD
 	font-size: 3.5rem;
 	color: #fff;
 }
@@ -120,3 +131,32 @@ footer{
     0% { -webkit-transform: translateX(0%); }
     100% { -webkit-transform: translateX(-100%); }
 }
+=======
+	font-size: 5rem;
+}
+
+.button-chellange{
+	background-color: transparent;
+	border: 1px solid #7E23BE;
+	color: #7E23BE;
+}
+
+.button-chellange:hover{
+	background-color: #7E23BE;
+	color: #FFFFFF;
+}
+
+.selected{
+	background-color: #2878F0;
+	color: #FFFFFF;
+}
+
+.variavel-input{
+	outline: 0;
+	border: 0;
+	width: 20%;
+	border-bottom: 1px solid #fff;
+	color: white;
+	background: transparent;
+}
+>>>>>>> ea44eb31672d1142369fb12f3b50d09b7434f6cd
