@@ -16,6 +16,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" href="<?= $url?>/assets/css/fonts.css">
+	<link rel="stylesheet" href="<?= $url?>/assets/css/loader.css">
 	<link rel="shortcut icon" href="<?= $url ?>/assets/img/logo.png" type="image/x-icon">
 	<!-- Styles -->
 	<?php $this->helpers['URLHelper']->getStyles(); ?>
@@ -24,6 +25,9 @@
 
 <body>
 
+	<div id="loader-overlay" style="display:none">
+        <span class="loader loader-circles"></span>
+    </div>
     <header>
         <div class="container-logoplusplus">
             <img src="<?= $url ?>/assets/img/logo.png" alt="logoplusplus">
@@ -31,7 +35,15 @@
 
         <div class="menu">
             <ul>
-                <li><a href="<?= $url ?>/login">Entrar</a></li>
+                <li>
+					<?php 
+					if (!$this->helpers['UserSession']->has()) { ?>
+						<a href="<?= $url ?>/atividades"><i class="fa-solid fa-circle-user"></i><?= $this->helpers['UserSession']->get('username') ?></a>
+
+					<?php }else{ ?>
+						<a href="<?= $url ?>/login">Entrar</a>
+					<?php } ?>
+				</li>
 
             </ul>
         </div>

@@ -13,85 +13,91 @@ class ActivitiesController extends Controller
 	//home header
 	public function index()
 	{		
+		if (!$this->helpers['UserSession']->has()) {
 
-		$this->setLayout(
-			'site/shared/layout.php',
-			'Página home',
-			array(
-				'assets/css/actividies/style.css',
-			),
-			array(
-				'assets/libs/jquery/jquery.min.js',
-				'assets/js/site/actividies/main.js'
-			)
-		);
-		$this->view('site/challenges/challenges.php');
+			$this->setLayout(
+				'site/shared/layout.php',
+				'Página home',
+				array(
+					'assets/css/actividies/style.css',
+				),
+				array(
+					'assets/libs/jquery/jquery.min.js',
+					'assets/js/site/actividies/main.js'
+				)
+			);
+			$this->view('site/challenges/challenges.php');
+		}else{
+			
+			header('LOCATION: ' . $this->helpers['URLHelper']->getURL() . '/');
+		}
 
 	}
 
 	public function intro($params)
 	{
 
-		$this->setLayout(
-			'site/shared/layout.php',
-			'Página home',
-			array(
-				'assets/css/actividies/style.css',
-			),
-			array(
-				'assets/libs/jquery/jquery.min.js',
-				'assets/js/site/actividies/main.js'
-			)
-		);
-		switch ($params[0]) {
-			case '2':
-				$this->view('activities/intro/part2.php');
-				break;
+		if (!$this->helpers['UserSession']->has()) {
+			$this->setLayout(
+				'site/shared/layout.php',
+				'Página home',
+				array(
+					'assets/css/actividies/style.css',
+					'assets/css/progress.css',
+				),
+				array(
+					'assets/libs/jquery/jquery.min.js',
+					'assets/js/site/actividies/main.js',
+					'assets/js/site/progress.js',
+				)
+			);
+					$this->view('activities/intro/index.php', array('part' => $params[0], ));
+				
+				
+		}else{
 			
-			case '3':
-				$this->view('activities/intro/part3.php');
-				break;
-			
-			case '4':
-				$this->view('activities/intro/part4.php');
-				break;
-			
-			default:
-				$this->view('activities/intro/part1.php');
-				break;
+			header('LOCATION: ' . $this->helpers['URLHelper']->getURL() . '/');
 		}
-
 	}
 
 	public function variables($params)
 	{
-		$this->setLayout(
-			'site/shared/layout.php',
-			'Página home',
-			array(
-				'assets/css/actividies/style.css',
-			),
-			array(
-				'assets/libs/jquery/jquery.min.js',
-				'assets/js/site/actividies/main.js'
-			)
-		);
-		switch ($params[0]) {
-			case '2':
-				$this->view('activities/variables/part2.php');
-				break;
+		if (!$this->helpers['UserSession']->has()) {
+
 			
-			case '3':
-				$this->view('activities/variables/part3.php');
-				break;
+			$this->setLayout(
+				'site/shared/layout.php',
+				'Página home',
+				array(
+					'assets/css/actividies/style.css',
+					'assets/css/progress.css',
+				),
+				array(
+					'assets/libs/jquery/jquery.min.js',
+					'assets/js/site/actividies/main.js',
+					'assets/js/site/progress.js',
+				)
+			);
+			switch ($params[0]) {
+				case '2':
+					$this->view('activities/variables/part2.php');
+					break;
+				
+				case '3':
+					$this->view('activities/variables/part3.php');
+					break;
+				
+				case '4':
+					$this->view('activities/variables/part4.php');
+					break;
+				
+				default:
+					$this->view('activities/variables/index.php');
+					break;
+			}
+		}else{
 			
-			case '4':
-				$this->view('activities/variables/part4.php');
-				break;
-			
-			default:
-				$this->view('activities/variables/index.php');
-				break;
+			header('LOCATION: ' . $this->helpers['URLHelper']->getURL() . '/');
 		}
 	}
 }

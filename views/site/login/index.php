@@ -2,14 +2,15 @@
     <div class="login">
 
         <div>
-            <img src="COMPONENTES/imagens/logoplusplus.png">
+            <img src="<?= $url ?>/assets/img/logo.png">
         </div>
 
-        <form>
-            <input type="text" name="Nome" placeholder="Usuário" autofocus>
-            <input type="password" name="Senha" placeholder="Senha">
-            <input type="submit"  value="Entrar">
+        <form id="form-login">
+            <input type="text" name="email" placeholder="E-mail" autofocus>
+            <input type="password" name="password" placeholder="Senha">
+            <button type="button"  id="login">Entrar</button>
         </form>
-        <p>Ainda não tens uma conta?<a href="cadastro.html">Cadastre-se já!</a></p>
+        <p class="text-center">Ainda não tens uma conta?<a href="<?= $url ?>/cadastro">Cadastre-se já!</a></p>
+
     </div>
 </section>

@@ -54,14 +54,19 @@ input::placeholder{
 
 }
 
-form [type="submit"]{
+button#login{
 
     display: block;
-    background-color: blueviolet;
+    background-color: #5cacee;
+    color: #fff;
     font-size:20px;
     text-transform: uppercase;
-    font-weight: bold;
     cursor: pointer;
+    margin-top: 15px;
+    border: 0;
+    border-radius: 20px;
+    padding: 6px;
+    color: #fff;
 
 }
 

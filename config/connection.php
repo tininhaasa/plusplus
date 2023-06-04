@@ -9,16 +9,16 @@
 **/
 
 $config = array(
-	'dsn'      => 'mysql:dbname=phpmyadmin;host=127.0.0.1',
+	'dsn'      => 'mysql:dbname=plusplus;host=127.0.0.1',
 	'username' => 'root',
 	'password' => null
 );
 
 // Caso seja o ambiente de produção a configuração é trocada
 if(ENV == 'prod'){
-	$config['dsn'] 		= '';
-	$config['username'] = '';
-	$config['password'] = '';
+	$config['dsn'] 		= 'mysql:dbname=u939375502_plusplus;host=154.49.247.1';
+	$config['username'] = 'u939375502_plusplus';
+	$config['password'] = '~@ilDQp0';
 }
 
 return $config;

@@ -54,15 +54,18 @@ input::placeholder{
 
 }
 
-form [type="submit"]{
-
+button#cadastre{
     display: block;
-    background-color: blueviolet;
-    font-size:20px;
+    background-color: #5cacee;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-
+    margin-top: 15px;
+    border: 0;
+    border-radius: 20px;
+    padding: 6px;
+    color: #fff;
 }
 
 p{

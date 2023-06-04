@@ -12,4 +12,5 @@ define('LOCAL_URL', '/plusplus/');
 
 return array(
 	'URLHelper' => new URLHelper(),
+	'UserSession' => new UserSession,
 );

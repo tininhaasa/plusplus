@@ -1,8 +1,12 @@
 @font-face {
-    font-family: 'hello_world';
-    src: url(../libs/fonts/hello-world.ttf);
+    font-family: 'VCRosd bold';
+    src: url(../libs/fonts/VCRosdNEUE.ttf);
+}
+@font-face {
+    font-family: 'VCRosd';
+    src: url(../libs/fonts/VCR_OSD_MONO_1.001.ttf);
 }
 
 *{
-    font-family: 'hello_world'!important;
+    font-family: 'VCRosd'!important;
 }

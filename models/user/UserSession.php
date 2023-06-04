@@ -13,9 +13,9 @@ class UserSession
 	private function control()
 	{
 		
-		if(!isset($_SESSION)){
+		if(!isset($_COOKIE['User'])){
 			
-			session_start();
+			setcookie('User', "", time() + (86400 * (30 * 6)), "/");
 
 		}
 
@@ -23,9 +23,10 @@ class UserSession
 
 	public function saveUser($data)
 	{
+		//$this->control();
 
-		$this->control();
-		$_SESSION['User'] = $data;
+		$data = json_encode($data);
+		setcookie('User', $data, time() + (86400 * (30 * 6)), "/");
 		return true;
 		
 	}
@@ -34,9 +35,8 @@ class UserSession
 	public function has()
 	{
 
-		$this->control();
-
-		if(isset($_SESSION['User'])){
+		//$this->control();
+		if(isset($_COOKIE['User']) && $_COOKIE['User'] != ""){
 			return true;
 		}
 
@@ -47,10 +47,17 @@ class UserSession
 	public function get($info)
 	{
 
-		$this->control();
+		//$this->control();
+		if(isset($_COOKIE['User'])){
+			$data = json_decode($_COOKIE['User'], true);
+		}else{
+			return false;
+		}
 
-		if(isset($_SESSION['User'][$info])){
-			return $_SESSION['User'][$info];
+		if(isset($data[$info])){
+			return $data[$info];
+		}else{
+			return false;
 		}
 
 	}
@@ -59,26 +66,37 @@ class UserSession
 	public function setUser($info, $value)
 	{
 
-		$this->control();
+		//$this->control();
+		if(isset($_COOKIE['User'])){
+			$data        = json_decode($_COOKIE['User'], true);
+			$data[$info] = $value;
 
-		$_SESSION['User'][$info] = $value;
+			$data = json_encode($data);
+			$_COOKIE['User'] = $data;
+			setcookie('User', $data, time() + (86400 * (30 * 6)), "/");
+		}
 
 	}
 
 	public function deleteUser()
 	{
 
-		$this->control();
-		unset($_SESSION['User']);
+		//$this->control();
+		unset($_COOKIE['User']);
+		setcookie('User', null, -1, "/");
 
 	}
 
-	public function getAlerts(){
-
+	public function checkUser($id)
+	{
 		$userData = new UserData;
-		$alerts = $userData->getAlertsNonwiewed();
+		$result = $userData->getDataById($id);
 
-		return $alerts;
+		if(!$result || $result == ""){
+			$this->deleteUser();
+		}
+
+		return $result;
 	}
 
 }
