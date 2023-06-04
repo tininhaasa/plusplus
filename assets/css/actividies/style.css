@@ -17,7 +17,6 @@ body {
 
 p{
 	color: #fff;
-
 }
 
 
@@ -53,7 +52,6 @@ li{
 }
 
 .title{
-<<<<<<< HEAD
 	font-size: 3.5rem;
 	color: #fff;
 }
@@ -131,9 +129,6 @@ footer{
     0% { -webkit-transform: translateX(0%); }
     100% { -webkit-transform: translateX(-100%); }
 }
-=======
-	font-size: 5rem;
-}
 
 .button-chellange{
 	background-color: transparent;
@@ -159,4 +154,6 @@ footer{
 	color: white;
 	background: transparent;
 }
->>>>>>> ea44eb31672d1142369fb12f3b50d09b7434f6cd
+
+.texto-explicacao{
+}
