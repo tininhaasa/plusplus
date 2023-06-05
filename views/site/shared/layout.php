@@ -31,7 +31,7 @@
 	<div id="loader-overlay" style="display:none">
         <span class="loader loader-circles"></span>
     </div>
-    <header>
+
     <header class="header-menu" style="background-color: black;">
 
         <nav class="navbar navbar-expand-lg bg-black">
