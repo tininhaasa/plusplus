@@ -94,61 +94,6 @@ footer {
     display: none;
 }
 
-
-#slider {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: blue;
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-}
-
-.slide-in {
-    animation: slide-in 0.5s forwards;
-    -webkit-animation: slide-in 0.5s forwards;
-}
-
-.slide-out {
-    animation: slide-out 0.5s forwards;
-    -webkit-animation: slide-out 0.5s forwards;
-}
-
-@keyframes slide-in {
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-@-webkit-keyframes slide-in {
-    100% {
-        -webkit-transform: translateX(0%);
-    }
-}
-
-@keyframes slide-out {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-@-webkit-keyframes slide-out {
-    0% {
-        -webkit-transform: translateX(0%);
-    }
-
-    100% {
-        -webkit-transform: translateX(-100%);
-    }
-}
-
-font-size: 5rem;
-}
-
 .button-chellange {
     background-color: transparent;
     border: 1px solid #7E23BE;
@@ -277,4 +222,27 @@ input {
 .swal2-popup {
     background-color: #222222;
     color: #fff;
+}
+
+#lampada-or{
+	height: 250px;
+	transition: opacity 1s;
+}
+
+.switch{
+	border: 0;
+	background-color: #7E23BE;
+}
+
+.container-selecao-7{
+	height: 100vh;
+}
+
+.button-selection-7{
+	width: 150px;
+	height: 45px;
+}
+
+.container-selecao-8{
+	height: 100vh;
 }

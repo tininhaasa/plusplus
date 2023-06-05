@@ -125,6 +125,22 @@ class ActivitiesController extends Controller
 			case '4':
 				$this->view('activities/if/part4.php');
 				break;
+
+			case '5':
+				$this->view('activities/if/part5.php');
+				break;
+			
+			case '6':
+				$this->view('activities/if/part6.php');
+				break;
+			
+			case '7':
+				$this->view('activities/if/part7.php');
+				break;
+				
+			case '8':
+				$this->view('activities/if/part8.php');
+				break;
 			
 			default:
 				$this->view('activities/if/part1.php');

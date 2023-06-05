@@ -19,22 +19,28 @@ function CorrectVariableExercise2() {
         var btnNext = document.querySelector(".btn-next");
         btnNext.classList.remove("disabled");
     } else {
-        alert(
-            "Revise a questão, se precisar leia novamente a explicação clicando no botão voltar"
-        );
+        Swal.fire({
+            type: "warning",
+            title: "Ops!",
+            text: "Revise a questão, se precisar leia novamente a explicação clicando no botão voltar.",
+            confirmButtonText: "Continuar",
+        });
     }
 }
 
 function CorrectVariableExercise4() {
-	var regex = /^(string|float|decimal|char|int)\s+([a-zA-Z_][a-zA-Z0-9_-]*)$/;
+    var regex = /^(string|float|decimal|char|int)\s+([a-zA-Z_][a-zA-Z0-9_-]*)$/;
     var inputVariable = document.querySelector("#input-variable");
     if (regex.test(inputVariable.value)) {
         var btnNext = document.querySelector(".btn-next");
         btnNext.classList.remove("disabled");
     } else {
-        alert(
-            "Revise a questão, se precisar leia novamente a explicação clicando no botão voltar"
-        );
+        Swal.fire({
+            type: "warning",
+            title: "Ops!",
+            text: "Revise a questão, se precisar leia novamente a explicação clicando no botão voltar.",
+            confirmButtonText: "Continuar",
+        });
     }
 }
 
@@ -47,5 +53,27 @@ function SelectButton(array) {
         btnClicked.classList.add("selected");
         btnNotClicked.classList.remove("selected");
         btnNotClicked2.classList.remove("selected");
+    }
+}
+
+function ChangeLightOnOrExercise(){
+    var inputSwitch1 = document.querySelector("#switch-or-1");
+    var inputSwitch2 = document.querySelector("#switch-or-2");
+    var lampadaImagem = document.querySelector("#lampada-or");
+    if (inputSwitch1.checked || inputSwitch2.checked) {
+        lampadaImagem.src = "../../assets/img/luz-ativo.png"
+    }else{
+        lampadaImagem.src = "../../assets/img/Luz-apagada.png"
+    }
+}
+
+function ChangeLightOnAndExercise(){
+    var inputSwitch1 = document.querySelector("#switch-and-1");
+    var inputSwitch2 = document.querySelector("#switch-and-2");
+    var lampadaImagem = document.querySelector("#lampada-and");
+    if (inputSwitch1.checked && inputSwitch2.checked) {
+        lampadaImagem.src = "../../assets/img/luz-ativo.png"
+    }else{
+        lampadaImagem.src = "../../assets/img/Luz-apagada.png"
     }
 }
