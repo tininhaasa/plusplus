@@ -1,130 +1,89 @@
-body{
-	background-color: whitesmoke;
-}
-.main-banner{
-    background-image: url('../img/fundohexagonos.png');
-    background-color: whitesmoke;
-    font-family: HW;
-    background-position: center;
-    text-align: center;
-    font-size: 60px;
-    padding: 65px 0;
+* {
     margin: 0;
-    color: white;
-    text-shadow: 2px 2px 2px #000,-2px 2px 2px #000,2px -2px 2px #000,-2px -2px 2px #000;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-
-*{
     padding: 0;
-    margin: 0;
+    box-sizing: border-box;
 }
 
-#luciano{
-	width: 100%;
-}
 
-#gattino{
-	width: 100%;
-}
-
-header{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-    
-}
-
-.menu li{
-    display: inline-block;
-
-}
-
-.menu li a {
-    font-size: 25px;
-    text-decoration: none;
-    color: black;
-    margin-right: 20px;
-}
-
-header img{
-    margin-left: 20px;
-    height: 50px;
+footer{
+    background-image: linear-gradient(to right, #51aff3, white);
+    height: 60px;
 }
 
 .sobreocurso{
-    background-color:whitesmoke;
-    color:#000;
-    text-shadow: none;
-    text-align:left;
+    background-color: rgb(40, 38, 38);
+    color: white;
+    font-size: 20px;
 
+    
 }
 
 .sobreaplusplus{
-    background-color: whitesmoke;
-    color: #000;    text-shadow: none;
+    background-color: rgb(22, 21, 21);
+    font-size: 20px;
+    
+    
 }
 
 .comofazemos{
-    background-color:whitesmoke;
-    color: #000;
+
+    font-size: 20px;
     text-shadow: none;
     text-align: left;
+    
 
 }
 
-footer{
-    background-color: black;
-    height: 9vh;
-    width: 100%;
-    display: flex;  
-}
-
-
-
-.primeira{
+.main-banner{
+    background-image: url('../img/fundohexagonos.png');
+    background-color: rgb(40, 38, 38);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-left: 25px;
-    
 }
 
-.segunda{
-    display: flex;
+.main-banner h2{
+    font-size: 96px;
+}
+.main-banner .col-6{
+        display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-left: 25px;
-    
+    justify-content: center;
+}
+.main-banner #gattino{
+    width: 35vw;
+}
+.gradient-font{
+    background: linear-gradient(89.82deg, #5CACEE 0.11%, rgba(255, 255, 255, 0.81) 103.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
 }
 
-.terceira{
+h3{
+    font-size: 40px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(40, 38, 38);
+    color: white;
+
+}
+
+p{
+    text-align: justify;
+    font-size: 17px;
+    font-family: 'poppins'!important;
+}
+
+.col-md-8 {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 25px;
-    
-}
-
-#textocurso{
-    text-align:justify;
-    
-}
-
-.textoplusplus{
-    text-align:center;
-    margin-right: 50px;
-}
-
-.textocomofazemos{
-    text-align:justify;
-    margin-right: 50px;
-}
-
-#LogoSI{
-	height: 150px;
+    flex-direction: column;
+    justify-content: center;
 }

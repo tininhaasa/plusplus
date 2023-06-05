@@ -7,6 +7,100 @@
     src: url(../libs/fonts/VCR_OSD_MONO_1.001.ttf);
 }
 
+@font-face {
+    font-family: 'montserrat';
+    src: url(../libs/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'montserrat light';
+    src: url(../libs/fonts/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: 'montserrat bold';
+    src: url(../libs/fonts/Montserrat-Bold.ttf);
+}
+@font-face{
+    font-family: 'montserrat black';
+    src: url(../libs/fonts/Montserrat-Black.ttf);
+}
+@font-face {
+    font-family: 'montserrat bold italic';
+    src: url(../libs/fonts/Montserrat-BoldItalic.ttf);
+}
+@font-face {
+    font-family: 'montserrat thin';
+    src: url(../libs/fonts/Montserrat-Thin.ttf);
+}
+@font-face{
+    font-family: 'montserrat italic';
+    src: url(../libs/fonts/Montserrat-Italic.ttf);
+}
+@font-face {
+    font-family: 'poppins';
+    src: url(../libs/fonts/poppins-regular.ttf);
+}
+@font-face {
+    font-family: 'poppins light';
+    src: url(../libs/fonts/poppins-light.ttf);
+}
+@font-face {
+    font-family: 'poppins bold';
+    src: url(../libs/fonts/poppins-bold.ttf);
+}
+@font-face{
+    font-family: 'poppins black';
+    src: url(../libs/fonts/poppins-black.ttf);
+}
+@font-face {
+    font-family: 'poppins bold italic';
+    src: url(../libs/fonts/poppins-bolditalic.ttf);
+}
+@font-face {
+    font-family: 'poppins thin';
+    src: url(../libs/fonts/poppins-thin.ttf);
+}
+@font-face{
+    font-family: 'poppins italic';
+    src: url(../libs/fonts/poppins-italic.ttf);
+}
+@font-face{
+    font-family: 'poppins medium';
+    src: url(../libs/fonts/poppins-medium.otf);
+}
+@font-face{
+    font-family: 'poppins semibold';
+    src: url(../libs/fonts/poppins-semibold.otf);
+}
+
 *{
     font-family: 'VCRosd'!important;
+}
+
+.font-regular,
+.font-regular font font{
+    font-family: 'montserrat';
+}
+.font-light,
+.font-light font font{
+    font-family: 'montserrat light';
+}
+.font-bold,
+.font-bold font font{
+    font-family: 'montserrat bold';
+}
+.font-black,
+.font-black font font{
+    font-family: 'montserrat black'!important;
+}
+.font-bi,
+.font-bi font font{
+    font-family: 'montserrat bold italic';
+}
+.font-thin,
+.font-thin font font{
+    font-family: 'montserrat thin';
+}
+.font-italic,
+.font-italic font font{
+    font-family: 'montserrat italic';
 }

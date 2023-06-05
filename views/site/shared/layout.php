@@ -32,31 +32,39 @@
         <span class="loader loader-circles"></span>
     </div>
     <header>
-        <div class="container-logoplusplus">
-            <img src="<?= $url ?>/assets/img/logo.png" alt="logoplusplus">
-        </div>
+    <header class="header-menu" style="background-color: black;">
 
-        <div class="menu">
-            <ul>
-                <li>
-					<?php 
-					if ($this->helpers['UserSession']->has()) { ?>
-						<a href="<?= $url ?>/atividades"><i class="fa-solid fa-circle-user"></i><?= $this->helpers['UserSession']->get('username') ?></a>
+        <nav class="navbar navbar-expand-lg bg-black">
+            <div class="container-fluid">
 
-					<?php }else{ ?>
-						<a href="<?= $url ?>/login">Entrar</a>
-					<?php } ?>
-				</li>
+              <a class="navbar-brand" href="<?= $url ?>/">
+                 <img src="<?= $url ?>/assets/img/logoplusplus.png" alt="logoplusplus">
+              </a>
 
-            </ul>
-        </div>
-    </header> 
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+              </button> 
+              <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end;">
+
+                <ul class="navbar-nav ml-auto">
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="<?= $url ?>/login" style="color: white;font-size: 20px;">Entrar</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    </header>
 
 	<main>
 		<?php require $file; ?>
 	</main>
 
-	<footer>Footer</footer>
+	<footer></footer>
 
 	<script type="text/javascript">
 		var PATH = "<?php echo $url; ?>";

@@ -8,6 +8,8 @@
 (function ($, PATH, Helpers) {
     $(document).ready(function () {
 
+        var type_error = [];
+
         $("body").on("click", ".price-chest", function(){
             Swal.fire({
                 html: `<div class="text-center"><h4>Você desbloqueou: <br />
@@ -81,12 +83,25 @@
         $(".piece").draggable();
         $(".fitting").droppable({
             drop: function (event, ui) {
-                console.log(event)
-                console.log(ui)
-                console.log($(this))
+                console.log(event);
+                console.log(ui['draggable']);
+                console.log($(this));
                     
+                let index = $(this).attr("data-index");
+                let fit = ui['draggable'].attr("data-fit");
+                if(fit.includes(index)){
+                    console.log("AAAAA");
+                }else{
+
+                    type_error.splice(index, 0, fit);
+                }
             }
         });
+        $("body").on("click", ".btn-correction", function(){
+
+            console.log(type_error)
+
+        })
     });
 
 
