@@ -1,0 +1,1 @@
+<?php echo file_get_contents("assets/img/or.svg"); ?>

@@ -1,12 +1,14 @@
-<section class="intro part3 <?= (isset($part) && $part == '3')? : "d-none" ?>" id="intro3-section">
+<section class="intro part3" id="intro3-section">
 
     <div class="content">
-        <h1 class="mb-3 title">Programação...</h1>
-        <p class="text-justify">Por mais complicado que pareça o inicio de programação não é tão difícil, mas estamos aqui para ajudar.
-            <br />
-            Para iniciar um programa, deverá ser construído usando um ou mais de apenas três estruturas, que são sequência, seleção e interação.
+        <h1 class="mb-3 title">E isso é uma sequencia!</h1>
+        <p class="text-justify">Há diversas coisas no nosso dia que são uma série de ações seguidas da outra que servem para obter determinado resultado. <br />
+
+            Assim como na vida na programação podemos atingir o mesmo resultado com várias sequencias de “ações” diferentes, mas há alguns empecilhos para que um código funcione do jeito certo... <br />
+
+            Não desanimes, ainda há muito mais pela frente!
+
         </p>
-        <p>Pense na programação como uma receita de bolo, um passo a passo.</p>
     </div>
 
 </section>

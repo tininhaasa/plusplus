@@ -98,7 +98,7 @@
                                 }
 
                             } else
-                                swal({
+                                Swal.fire({
                                     type: 'warning',
                                     title: 'Ops!',
                                     text: 'Ocorreu algum erro inesperado. Tente novamente mais tarde.',

@@ -47,11 +47,12 @@ class ActivitiesController extends Controller
 				),
 				array(
 					'assets/libs/jquery/jquery.min.js',
-					'assets/js/site/actividies/main.js',
+					'assets/js/site/actividies/script.js',
+					'assets/js/site/actividies/intro.js',
 					'assets/js/site/progress.js',
 				)
 			);
-					$this->view('activities/intro/index.php', array('part' => $params[0], ));
+			$this->view('activities/intro/index.php', array('part' => $params[0], ));
 				
 				
 		}else{

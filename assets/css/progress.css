@@ -94,15 +94,15 @@ section {
 }
 
 .progress-bar .is-complete:not(:first-child):after,
-.progress-bar .is-active:not(:first-child):after {
+.progress-bar .is-active:not(:first-child):after {    
     content: "";
     display: block;
     width: 100%;
     position: absolute;
-    bottom: -2px;
+    bottom: -7px;
     left: -50%;
     z-index: 2;
-    border-bottom: 2px solid var(--color-green);
+    border-bottom: 8px solid var(--color-green);
 }
 
 .progress-bar li:last-child span {
