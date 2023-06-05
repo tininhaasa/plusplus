@@ -13,7 +13,7 @@ class LoginController extends Controller
 	//home header
 	public function index()
 	{		
-		if ($this->helpers['UserSession']->has()) {
+		if (!$this->helpers['UserSession']->has()) {
 
 		
 			$this->setLayout(

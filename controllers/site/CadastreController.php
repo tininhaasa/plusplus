@@ -37,7 +37,7 @@ class CadastreController extends Controller
 	{
 		$name = $_POST['username'];
 		$email = $_POST['email'];
-		$password = sha1($_POST['password']);
+		$password = hash('sha1',$_POST['password']);
 
 		$userData = new UserData;
 		$user = $userData->getUserEmail($email);

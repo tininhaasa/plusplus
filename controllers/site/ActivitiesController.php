@@ -13,7 +13,7 @@ class ActivitiesController extends Controller
 	//home header
 	public function index()
 	{		
-		if (!$this->helpers['UserSession']->has()) {
+		if ($this->helpers['UserSession']->has()) {
 
 			$this->setLayout(
 				'site/shared/layout.php',
@@ -99,7 +99,6 @@ class ActivitiesController extends Controller
 			array(
 				'assets/libs/jquery/jquery.min.js',
 				'assets/libs/jquery-ui/jquery-ui.min.js',
-				'assets/js/site/actividies/main.js',
 				'assets/js/site/actividies/if.js'
 			)
 		);
