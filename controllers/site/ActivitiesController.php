@@ -37,7 +37,7 @@ class ActivitiesController extends Controller
 	public function intro($params)
 	{
 
-		if (!$this->helpers['UserSession']->has()) {
+		if ($this->helpers['UserSession']->has()) {
 			$this->setLayout(
 				'site/shared/layout.php',
 				'Página home',
@@ -63,7 +63,7 @@ class ActivitiesController extends Controller
 
 	public function variables($params)
 	{
-		if (!$this->helpers['UserSession']->has()) {
+		if ($this->helpers['UserSession']->has()) {
 
 			$this->setLayout(
 				'site/shared/layout.php',
@@ -89,20 +89,26 @@ class ActivitiesController extends Controller
 
 	public function ifs($params)
 	{
-		$this->setLayout(
-			'site/shared/layout.php',
-			'Estrutura de Seleção',
-			array(
-				'assets/css/actividies/style.css',
-				'assets/css/progress.css',
-			),
-			array(
-				'assets/libs/jquery/jquery.min.js',
-				'assets/libs/jquery-ui/jquery-ui.min.js',
-				'assets/js/site/actividies/if.js'
-			)
-		);
-				$this->view('activities/if/index.php', array('part' => $params[0], ));
+		if ($this->helpers['UserSession']->has()) {
+
+			$this->setLayout(
+				'site/shared/layout.php',
+				'Estrutura de Seleção',
+				array(
+					'assets/css/actividies/style.css',
+					'assets/css/progress.css',
+				),
+				array(
+					'assets/libs/jquery/jquery.min.js',
+					'assets/libs/jquery-ui/jquery-ui.min.js',
+					'assets/js/site/actividies/if.js'
+				)
+			);
+			$this->view('activities/if/index.php', array('part' => $params[0], ));
 				
+		}else{
+			
+			header('LOCATION: ' . $this->helpers['URLHelper']->getURL() . '/');
+		}
 	}
 }

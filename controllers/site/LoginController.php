@@ -40,7 +40,7 @@ class LoginController extends Controller
 		if(isset($_POST['email'])){
 			
 			$email = $_POST['email'];
-			$password = sha1($_POST['password']);
+			$password = $_POST['password'];
 
 			$login  = new UserData;
 			$result = $login->loginUser($email, $password);
