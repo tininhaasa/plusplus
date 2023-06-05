@@ -19,15 +19,6 @@
         <p class="mt-2 mb-3">
             }
         </p>
-        <!-- 
-            Se, por exemplo tivermos mais de uma condição e as apenas uma dela precisa ser verdadeiras usamos  OR que é representado por ||
-
-SE(anos_contribuicao >= 15 || idade >= 65){
-         posso me aposentar
-}SE NÃO{
-         não  posso me aposentar
-}
-         -->
     </div>
     <div class="loading-bar w-100">
     <div class="buttons d-flex flex-row justify-content-around">
@@ -37,7 +28,7 @@ SE(anos_contribuicao >= 15 || idade >= 65){
             </a>
         </div>
         <div class="text-right">
-            <a href="<?= $url ?>/atividades/selecao/4" class="btn btn-primary btn-back">
+            <a href="<?= $url ?>/atividades/selecao/5" class="btn btn-primary btn-back">
                 Próximo
             </a>
         </div>
