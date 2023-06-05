@@ -1,5 +1,5 @@
 <div class="container-selecao d-flex flex-column">
-    <div class="p-5">
+    <div class="">
         <h1 class="mb-3 title">Veja como funciona AND e OR</h1>
         <div class="svg d-flex flex-row mt-5">
 
@@ -24,7 +24,7 @@
                 </div>
             </div>
 
-            <svg width="267" height="216" viewBox="0 0 267 216" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="logical-and" width="267" height="216" viewBox="0 0 267 216" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M157.734 9.16968H9V207.481H157.734" stroke="#7E23BE" stroke-width="17"
                     stroke-linecap="round" />
                 <path
@@ -40,27 +40,5 @@
             </svg>
             <img src="<?= $url ?>/assets/img/Luz-apagada.png" style="height: 250px;" id="lampada-and">
         </div>
-    </div>
-    <div class="loading-bar w-100">
-        <div class="buttons d-flex flex-row justify-content-around">
-            <div class="">
-                <a href="<?= $url ?>/atividades/selecao/5" class="btn btn-primary btn-back">
-                    Voltar
-                </a>
-            </div>
-            <div class="text-right">
-                <a href="<?= $url ?>/atividades/selecao/7" class="btn btn-primary btn-back">
-                    Próximo
-                </a>
-            </div>
-        </div>
-        <section>
-            <ol class="progress-bar">
-                <li class="is-active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ol>
-        </section>
     </div>
 </div>

@@ -8,6 +8,16 @@
 (function ($, PATH, Helpers) {
     $(document).ready(function () {
 
+        $("body").on("click", ".price-chest", function(){
+            Swal.fire({
+                html: `<div class="text-center"><h4>Você desbloqueou: <br />
+                Sabrina “incrivel”</h4><img style="width: 70%; margin-top: 35px" src="${PATH}/assets/img/sabrinain.png"></div>`,
+                showConfirmButton: false
+            }).then(function(){
+                window.location.href = PATH + "/atividades";
+            })
+        })
+
         $("body").on("click", ".btn-back", function () {
 
             current_page = parseInt($("#page").val());
@@ -20,17 +30,10 @@
             $(".btn-next:not(.btn-menu)").removeClass("d-none");
             $(".btn-back:not(.btn-menu)").removeClass("d-none");
             switch (current_page) {
-                case 1:
-                    $(".btn-back").addClass("d-none");
-                    $(".btn-back:is(.btn-menu)").removeClass("d-none");
-                    break;
-                case 2:
+                case 9:
                     $(".btn-correction").removeClass("d-none")
                     break;
-                case 4:
-                    $(".btn-correction").removeClass("d-none")
-                    break;
-                case 5:
+                case 10:
                     console.log("a")
                     $(".btn-next").addClass("d-none");
                     $(".btn-menu").removeClass("d-none");
@@ -53,13 +56,10 @@
             $(".btn-next:not(.btn-menu)").removeClass("d-none");
             $(".btn-back:not(.btn-menu)").removeClass("d-none");
             switch (current_page) {
-                case 2:
+                case 9:
                     $(".btn-correction").removeClass("d-none")
                     break;
-                case 4:
-                    $(".btn-correction").removeClass("d-none")
-                    break;
-                case 5:
+                case 10:
                     console.log("a")
                     $(".btn-next").addClass("d-none")
                     $(".btn-next:is(.btn-menu)").removeClass("d-none")

@@ -22,7 +22,7 @@ p {
 
 
 .content {
-    font-size: 20px;
+    font-size: 17px;
     text-align: justify;
 }
 
@@ -45,11 +45,6 @@ li {
 .btn-correct {
     background-color: #E4E4E4;
     color: #000;
-}
-
-.container-variables {
-    height: 100vh;
-    font-size: 30px;
 }
 
 .title {
@@ -127,6 +122,18 @@ footer {
 }
 
 .btn-next:hover {
+    background-color: #4a8abf;
+    border-color: #4a8abf;
+}
+
+.btn-blue {
+    padding: 5px 31px;
+    border-radius: 25px;
+    background-color: #5CACEE;
+    border-color: #5CACEE;
+}
+
+.btn-blue:hover {
     background-color: #4a8abf;
     border-color: #4a8abf;
 }
@@ -231,18 +238,53 @@ input {
 
 .switch{
 	border: 0;
-	background-color: #7E23BE;
+	background-color: #7E23BE!important;
 }
 
 .container-selecao-7{
 	height: 100vh;
 }
 
-.button-selection-7{
-	width: 150px;
-	height: 45px;
-}
-
 .container-selecao-8{
 	height: 100vh;
+}
+.form-switch{
+    padding: 0!important;
+    margin: 0!important;
+}
+.form-check .form-check-input{
+    float: none;
+    margin: 0 -3px 0px 0!important;
+    height: 1.8em;
+    width: 3.5em;
+}
+
+.svg.d-flex{
+    justify-content: center;
+}
+
+.switch-line.d-flex{
+    align-items: center;
+}
+
+.logical{
+    margin-left: -26px;
+    align-self: center;
+}
+
+.logical-and{
+    margin-left: -16px;
+    align-self: center;
+}
+
+dl *{
+    font-weight: normal;
+}
+
+.text-bg-purple{        
+    border: solid 3px #7E23BE;
+    height: 30px;
+    width: 70px;
+    display: inline-block!important;
+    margin-bottom: -5px;
 }

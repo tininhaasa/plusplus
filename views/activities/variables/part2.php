@@ -1,5 +1,5 @@
 <div class="container-variables d-flex flex-column">
-    <div class="p-5">
+    <div class="">
         <div class="title">
             <h1 class="mb-3 title">Identifique</h1>
         </div>
@@ -24,17 +24,5 @@
             </div>
         </div>
 
-    </div>
-    <div class="footer d-flex flex-column justify-content-center" style="height:100%;"><!-- TODO: Verificar se fica melhor o center, end, evenly ou around isso para todas as barras -->
-
-        <div class="buttons p-4 d-flex justify-content-around">
-            <a href="<?= $url ?>/atividades/variavel/1" class="btn btn-lg btn-footer rounded-4">Voltar</a>
-            <button class="btn btn-lg btn-footer btn-correct rounded-4" onclick="CorrectVariableExercise2()">Corrigir</button>
-            <a href="<?= $url ?>/atividades/variavel/3" class="btn btn-lg btn-footer btn-next rounded-4 disabled">Proximo</a>
-        </div>
-        <div class="progress m-4" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0"
-            aria-valuemax="100">
-            <div class="progress-bar" style="width: 50%"></div>
-        </div>
     </div>
 </div>

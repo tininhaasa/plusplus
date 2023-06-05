@@ -1,4 +1,4 @@
-<div class="main-container container mt-5">
+<div class="main-container container mt-4">
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item <?= (!isset($part) || $part == '1')?  "active" : "" ?>">
