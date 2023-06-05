@@ -46,6 +46,11 @@
                 include('part9.php');
                 ?>
             </div>
+            <div class="carousel-item  <?= (isset($part) && $part == '10')?  "active" : "" ?>">
+                <?php
+                include('part10.php');
+                ?>
+            </div>
             
         </div>
     </div>

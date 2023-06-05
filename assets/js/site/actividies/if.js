@@ -99,7 +99,15 @@
         });
         $("body").on("click", ".btn-correction", function(){
 
-            console.log(type_error)
+            console.log(type_error.length)
+            if(type_error.length > 0){
+                Swal.fire({
+                    type: "warning",
+                    title: "Ops!",
+                    text: "Veja os exemplos e tente reordenar os as 'pilulas' em lugares diferentes",
+                    confirmButtonText: "Tentar Novamente",
+                });
+            }
 
         })
     });

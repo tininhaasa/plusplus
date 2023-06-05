@@ -72,7 +72,7 @@
     src: url(../libs/fonts/poppins-semibold.otf);
 }
 
-*{
+*:not(i){
     font-family: 'VCRosd'!important;
 }
 

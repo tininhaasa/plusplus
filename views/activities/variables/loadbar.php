@@ -10,7 +10,7 @@
             </a>
         </div>
         <div class="col-4 text-center">
-            <button class="btn btn-light btn-correction  <?= ($part == 2) ? "" : "d-none" ?>">Corrigir</button>
+            <button class="btn btn-light btn-correction  <?= ($part == 2) ? "" : "d-none" ?> ">Corrigir</button>
 
         </div>
         <div class="col-4 text-end" data-bs-target="#carouselExample" data-bs-slide="next">

@@ -54,10 +54,15 @@
             $(".btn-back:not(.btn-menu)").removeClass("d-none");
             switch (current_page) {
                 case 2:
-                    $(".btn-correction").removeClass("d-none")
+                    $(".btn-correction").removeClass("d-none");
+                    $(".btn-correction").addClass("ex-1");
+                    $(".btn-correction").removeClass("ex-2");
+
                     break;
                 case 4:
-                    $(".btn-correction").removeClass("d-none")
+                    $(".btn-correction").removeClass("d-none");
+                    $(".btn-correction").addClass("ex-2");
+                    $(".btn-correction").removeClass("ex-1");
                     break;
                 case 5:
                     console.log("a")
@@ -71,44 +76,54 @@
             $("#badge" + current_page).addClass("is-active");
 
         });
-        $('body').on('mouseover', ".no-button", function () {
-            $(this).css({
-                'position': 'fixed',
-                'top': Math.random() * window.innerHeight + "px",
-                'left': ((Math.random() * window.innerWidth) - 89) + "px"
-            });
-        });
-        $(".piece").draggable();
-        $(".fitting").droppable({
-            drop: function (event, ui) {
-                console.log(event)
-                console.log(ui)
-                console.log($(this))
-                    
+
+        $("body").on("click", ".ex-1", function(){
+            var btnString = document.querySelector("#btn-string-1");
+            var btnFloat = document.querySelector("#btn-float-2");
+            if (
+                btnString.classList.contains("selected") &&
+                btnFloat.classList.contains("selected")
+            ) {
+                Swal.fire({
+                    type: "success",
+                    title: "ISSAÊ!",
+                    text: "É assim que se faz, vocês acertou o tipos! Pode continuar",
+                    confirmButtonText: "Continuar",
+                });
+            } else {
+                Swal.fire({
+                    type: "warning",
+                    title: "Ops!",
+                    text: "Revise a questão, se precisar leia novamente a explicação clicando no botão voltar.",
+                    confirmButtonText: "Tentar Novamente",
+                });
             }
-        });
+        })
+        $("body").on("click", ".ex-2", function(){
+            var btnString = document.querySelector("#btn-string-1");
+            var btnFloat = document.querySelector("#btn-float-2");
+            if (
+                btnString.classList.contains("selected") &&
+                btnFloat.classList.contains("selected")
+            ) {
+                var btnNext = document.querySelector(".btn-next");
+                btnNext.classList.remove("disabled");
+            } else {
+                Swal.fire({
+                    type: "warning",
+                    title: "Ops!",
+                    text: "Revise a questão, se precisar leia novamente a explicação clicando no botão voltar.",
+                    confirmButtonText: "Continuar",
+                });
+            }
+        })
     });
 
 
 })($, PATH, Helpers);
 
 function CorrectVariableExercise2() {
-    var btnString = document.querySelector("#btn-string-1");
-    var btnFloat = document.querySelector("#btn-float-2");
-    if (
-        btnString.classList.contains("selected") &&
-        btnFloat.classList.contains("selected")
-    ) {
-        var btnNext = document.querySelector(".btn-next");
-        btnNext.classList.remove("disabled");
-    } else {
-        Swal.fire({
-            type: "warning",
-            title: "Ops!",
-            text: "Revise a questão, se precisar leia novamente a explicação clicando no botão voltar.",
-            confirmButtonText: "Continuar",
-        });
-    }
+    
 }
 
 function CorrectVariableExercise4() {

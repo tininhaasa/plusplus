@@ -61,7 +61,7 @@
         $("body").on("click", ".price-chest", function(){
             Swal.fire({
                 html: `<div class="text-center"><h4>Você desbloqueou: <br />
-                Tio Lu “tente de novo”</h4><img style="width: 70%; margin-top: 35px" src="${PATH}/assets/img/tiolutry.png"></div>`,
+                Tio Lu “chocado”</h4><img style="width: 70%; margin-top: 35px" src="${PATH}/assets/img/tiolutry.png"></div>`,
                 showConfirmButton: false
             }).then(function(){
                 window.location.href = PATH + "/atividades";
